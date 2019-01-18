@@ -12,6 +12,7 @@ import en from '@angular/common/locales/en';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { Code404Component } from './code404/code404.component';
 
 registerLocaleData(en);
 
@@ -20,7 +21,8 @@ registerLocaleData(en);
     AppComponent,
     HomePageComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    Code404Component
   ],
   imports: [
     BrowserModule,
