@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HomePageComponent } from './home-page/home-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
