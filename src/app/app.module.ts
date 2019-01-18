@@ -13,6 +13,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { Code404Component } from './code404/code404.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 
 registerLocaleData(en);
 
@@ -22,7 +23,8 @@ registerLocaleData(en);
     HomePageComponent,
     NavBarComponent,
     FooterComponent,
-    Code404Component
+    Code404Component,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
