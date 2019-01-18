@@ -8,6 +8,7 @@ const routes: Routes = [
     path: '',
     component: HomePageComponent
   },
+  // 404 放最下面
   {
     path: '**',
     component: Code404Component
