@@ -5,7 +5,7 @@
       <nz-form-item>
         <nz-form-control>
           <nz-input-group [nzPrefix]="prefixUser">
-            <input nz-input formControlName="userName"  placeholder="输入用户名">
+            <input nz-input formControlName="userName" [(ngModel)]="user"  placeholder="输入用户名">
           </nz-input-group>
           <nz-form-explain *ngIf="dateForm.get('userName').dirty && dateForm.get('userName').errors">请输入用户名</nz-form-explain>
         </nz-form-control>
@@ -13,7 +13,7 @@
       <nz-form-item>
         <nz-form-control>
           <nz-input-group [nzPrefix]="prefixLock">
-            <input nz-input formControlName="password" type="password"  placeholder="输入用户名">
+            <input nz-input formControlName="password" [(ngModel)]="password" type="password"  placeholder="输入用户名">
           </nz-input-group>
           <nz-form-explain *ngIf="dateForm.get('password').dirty && dateForm.get('password').errors">请输入密码</nz-form-explain>
         </nz-form-control>
@@ -24,7 +24,7 @@
             <span>记住我</span>
           </label>
           <a class="login-form-forgot">忘记密码</a>
-          <button nz-button class="login-form-button" [nzType]="'primary'">Log in</button>
+          <button nz-button class="login-form-button" (click)="toHome()" [nzType]="'primary'">Log in</button>
           Or
           <a href="">register now!</a>
         </nz-form-control>
