@@ -4,7 +4,7 @@
     <form nz-form [formGroup]="dateForm" class="login-form" (ngSubmit)="submitForm()">
       <nz-form-item>
         <nz-form-control>
-          <nz-input-group nzPrefix="prefixUser">
+          <nz-input-group [nzPrefix]="prefixUser">
             <input nz-input formControlName="userName"  placeholder="输入用户名">
           </nz-input-group>
           <nz-form-explain *ngIf="dateForm.get('userName').dirty && dateForm.get('userName').errors">请输入用户名</nz-form-explain>
@@ -12,7 +12,7 @@
       </nz-form-item>
       <nz-form-item>
         <nz-form-control>
-          <nz-input-group nzPrefix="prefixLock">
+          <nz-input-group [nzPrefix]="prefixLock">
             <input nz-input formControlName="password" type="password"  placeholder="输入用户名">
           </nz-input-group>
           <nz-form-explain *ngIf="dateForm.get('password').dirty && dateForm.get('password').errors">请输入密码</nz-form-explain>
