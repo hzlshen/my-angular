@@ -1,9 +1,13 @@
 <div nz-row nzGutter="8" class="nav-top">
-  <div nz-col nzSpan="8">
-    2
+  <div class="font22 nav-left" nz-col nzSpan="8">
+    <i class="icon-title" nz-icon spin type="github"></i>
+    Angular后台管理系统
   </div>
   <div nz-col nzSpan="8">
-    3
+    <nz-select style="width: 120px;" [(ngModel)]="selectedValue" nzAllowClear nzPlaceHolder="请选择">
+      <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+      <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+    </nz-select>
   </div>
   <div nz-col nzSpan="8">
   4

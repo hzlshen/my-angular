@@ -3,4 +3,11 @@
   height: 60px;
   line-height: 60px;
   background: #24292e;
+  color: #fff;
+  & .icon-title {
+    font-size: 26px;
+  }
+  & .nav-left {
+    text-align: center;
+  }
 }
