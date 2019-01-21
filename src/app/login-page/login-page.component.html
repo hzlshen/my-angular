@@ -1,9 +1,10 @@
-<div nz-row>
+<div nz-row class="form-class">
   <div class="contentbox" nz-col nzSpan="24">
+    <h3 class="title">Angular后台管理系统</h3>
     <form nz-form [formGroup]="dateForm" class="login-form" (ngSubmit)="submitForm()">
       <nz-form-item>
         <nz-form-control>
-          <nz-input-group nzPrefix="preUser">
+          <nz-input-group nzPrefix="prefixUser">
             <input nz-input formControlName="userName"  placeholder="输入用户名">
           </nz-input-group>
           <nz-form-explain *ngIf="dateForm.get('userName').dirty && dateForm.get('userName').errors">请输入用户名</nz-form-explain>
@@ -29,7 +30,7 @@
         </nz-form-control>
       </nz-form-item>
     </form>
-    <ng-template #preUser><i nz-icon type="user"></i></ng-template>
+    <ng-template #prefixUser><i nz-icon type="user"></i></ng-template>
     <ng-template #prefixLock><i nz-icon type="lock"></i></ng-template>
   </div>
 </div>
