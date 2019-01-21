@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-page',
@@ -7,13 +8,23 @@ import { Router } from '@angular/router';
   styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent implements OnInit {
+  dateForm: FormGroup;
 
-  constructor(private router: Router) { }
-
-  ngOnInit() {
+  submitForm(): void {
+    for (const i in this.dateForm.controls) {
+      this.dateForm.controls[ i ].markAsDirty();
+      this.dateForm.controls[ i ].updateValueAndValidity();
+    }
   }
 
-  toHome() {
-    this.router.navigateByUrl("/home");
+  constructor(private fb: FormBuilder) {
+  }
+
+  ngOnInit(): void {
+    this.dateForm = this.fb.group({
+      userName: [ null, [ Validators.required ] ],
+      password: [ null, [ Validators.required ] ],
+      remember: [ true ]
+    });
   }
 }
