@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { Code404Component } from './code404/code404.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { ContentComponent } from './content/content.component';
 
 registerLocaleData(en);
 
@@ -26,7 +27,8 @@ registerLocaleData(en);
     FooterComponent,
     Code404Component,
     LoginPageComponent,
-    SideBarComponent
+    SideBarComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
