@@ -1,4 +1,7 @@
 .home-page {
   height: calc(100% - 82px);
   background: #f5f5f5;
+  & .side-content {
+    padding: 0px;
+  }
 }
