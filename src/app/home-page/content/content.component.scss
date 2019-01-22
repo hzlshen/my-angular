@@ -1,4 +1,6 @@
 .content-top {
+  box-sizing: border-box;
   position: relative;
-  height: 100%;
+  height: calc(100% - 22px);
+  padding: 0 10px;
 }
