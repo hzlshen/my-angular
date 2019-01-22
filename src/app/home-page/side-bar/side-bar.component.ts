@@ -15,11 +15,5 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit() {
   }
-  openHandler(value: string): void {
-    for (const key in this.openMap) {
-      if (key !== value) {
-        this.openMap[ key ] = false;
-      }
-    }
-  }
+
 }
