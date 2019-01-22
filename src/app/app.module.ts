@@ -14,8 +14,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { Code404Component } from './code404/code404.component';
 import { LoginPageComponent } from './login-page/login-page.component';
-import { SideBarComponent } from './side-bar/side-bar.component';
-import { ContentComponent } from './content/content.component';
+import { SideBarComponent } from './home-page/side-bar/side-bar.component';
+import { ContentComponent } from './home-page/content/content.component';
 
 registerLocaleData(en);
 
