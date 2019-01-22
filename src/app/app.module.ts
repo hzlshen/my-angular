@@ -16,7 +16,7 @@ import { Code404Component } from './code404/code404.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SideBarComponent } from './home-page/side-bar/side-bar.component';
 import { ContentComponent } from './home-page/content/content.component';
-import { BreadCrumbComponent } from './bread-crumb/bread-crumb.component';
+import { BreadCrumbComponent } from './home-page/bread-crumb/bread-crumb.component';
 
 registerLocaleData(en);
 
