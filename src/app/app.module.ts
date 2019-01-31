@@ -17,6 +17,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { SideBarComponent } from './home-page/side-bar/side-bar.component';
 import { ContentComponent } from './home-page/content/content.component';
 import { BreadCrumbComponent } from './home-page/bread-crumb/bread-crumb.component';
+import { MenuComponent } from './menu/menu.component';
 
 registerLocaleData(en);
 
@@ -30,7 +31,8 @@ registerLocaleData(en);
     LoginPageComponent,
     SideBarComponent,
     ContentComponent,
-    BreadCrumbComponent
+    BreadCrumbComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
